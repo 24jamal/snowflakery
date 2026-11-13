@@ -1,0 +1,11 @@
+{
+  "@context": "http://www.w3.org/ns/csvw",
+  "tables": [
+    {
+      "url": "Account.csv"
+    },
+    {
+      "url": "Contact.csv"
+    }
+  ]
+}

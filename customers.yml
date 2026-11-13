@@ -1,0 +1,26 @@
+
+- object: Account
+  count: 5
+  fields:
+    Name: 
+      fake: company
+    Phone:
+      fake: phone_number
+    Website:
+      fake: url
+    Industry: Technology
+    Type: Customer
+
+- object: Contact
+  count: 10
+  fields:
+    FirstName:
+      fake: first_name
+    LastName:
+      fake: last_name
+    Email:
+      fake: email
+    Phone:
+      fake: phone_number
+    AccountId:
+      reference: Account
