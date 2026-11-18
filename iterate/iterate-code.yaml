@@ -1,0 +1,12 @@
+- plugin: snowfakery.standard_plugins.datasets.Dataset
+- object: Person
+  count: 10
+  fields:
+    Name:
+      fake: name
+
+    __address_from_csv:
+      Dataset.iterate:
+        dataset: addresses.csv
+    StreetAddress: ${{__address_from_csv.Number}} ${{__address_from_csv.Street}}
+    City: ${{__address_from_csv.City}}
